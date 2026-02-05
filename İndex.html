@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avilation973 | Download Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top right, #1e293b, #0f172a);
+            color: #f8fafc;
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .neon-glow:hover {
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+
+    <div class="absolute top-20 left-20 w-64 h-64 bg-blue-600/10 rounded-full blur-[100px]"></div>
+    <div class="absolute bottom-20 right-20 w-64 h-64 bg-indigo-600/10 rounded-full blur-[100px]"></div>
+
+    <main class="relative z-10 w-full max-w-4xl">
+        <div class="glass-card rounded-[2rem] p-8 md:p-12 overflow-hidden relative">
+            
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/3 flex justify-center">
+                    <div class="animate-float">
+                        <div class="w-48 h-48 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-3xl flex items-center justify-center shadow-2xl rotate-3">
+                            <i class="fa-solid fa-box-archive text-7xl text-white"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-2/3 text-center md:text-left">
+                    <div class="inline-block px-4 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-semibold mb-4">
+                        v1.0.0 Yayında
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">
+                        TEST Projesi
+                    </h1>
+                    <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                        Tüm dosyaları tek bir paket halinde indirin. Kaynak kodları ve gerekli tüm kütüphaneler bu arşivin içindedir.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://github.com/Avilation973/TEST/archive/refs/heads/main.zip" 
+                           class="neon-glow flex-1 bg-blue-600 hover:bg-blue-500 text-white text-center px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-file-zipper"></i>
+                            Klasörü İndir (.ZIP)
+                        </a>
+
+                        <a href="https://github.com/Avilation973/TEST" target="_blank"
+                           class="flex-1 bg-slate-700/50 hover:bg-slate-700 text-white text-center px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 border border-slate-600 flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-github"></i>
+                            Repo'yu Gör
+                        </a>
+                    </div>
+
+                    <div class="mt-8 flex items-center justify-center md:justify-start gap-6 text-slate-500 text-sm">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-shield-halved text-green-500"></i> Güvenli Tarama
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-bolt text-yellow-500"></i> Hızlı İndirme
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="text-center mt-8 text-slate-500 text-sm">
+            &copy; 2024 Avilation973. Tüm hakları saklıdır. <br class="md:hidden"> 
+            <span class="mx-2 hidden md:inline">|</span> 
+            GitHub üzerinden açık kaynak olarak sunulmuştur.
+        </p>
+    </main>
+
+</body>
+</html>
